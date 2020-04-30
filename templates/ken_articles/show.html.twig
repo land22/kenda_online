@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}KenArticles{% endblock %}
+
+{% block body %}
+    <h1>KenArticles</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ ken_article.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ ken_article.nom }}</td>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <td>{{ ken_article.nombre }}</td>
+            </tr>
+            <tr>
+                <th>Prix</th>
+                <td>{{ ken_article.prix }}</td>
+            </tr>
+            <tr>
+                <th>CreatedAt</th>
+                <td>{{ ken_article.createdAt ? ken_article.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ ken_article.description }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('ken_articles_index') }}">back to list</a>
+
+    <a href="{{ path('ken_articles_edit', {'id': ken_article.id}) }}">edit</a>
+
+    {{ include('ken_articles/_delete_form.html.twig') }}
+{% endblock %}

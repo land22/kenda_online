@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}KenArticles index{% endblock %}
+
+{% block body %}
+    <h1>KenArticles index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Nombre</th>
+                <th>Prix</th>
+                <th>CreatedAt</th>
+                <th>Description</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for ken_article in ken_articles %}
+            <tr>
+                <td>{{ ken_article.id }}</td>
+                <td>{{ ken_article.nom }}</td>
+                <td>{{ ken_article.nombre }}</td>
+                <td>{{ ken_article.prix }}</td>
+                <td>{{ ken_article.createdAt ? ken_article.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ ken_article.description }}</td>
+                <td>
+                    <a href="{{ path('ken_articles_show', {'id': ken_article.id}) }}">show</a>
+                    <a href="{{ path('ken_articles_edit', {'id': ken_article.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('ken_articles_new') }}">Create new</a>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New KenCategories{% endblock %}
+
+{% block body %}
+    <h1>Create new KenCategories</h1>
+
+    {{ include('ken_categories/_form.html.twig') }}
+
+    <a href="{{ path('ken_categories_index') }}">back to list</a>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit KenArticles{% endblock %}
+
+{% block body %}
+    <h1>Edit KenArticles</h1>
+
+    {{ include('ken_articles/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('ken_articles_index') }}">back to list</a>
+
+    {{ include('ken_articles/_delete_form.html.twig') }}
+{% endblock %}

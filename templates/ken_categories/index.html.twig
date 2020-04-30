@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}KenCategories index{% endblock %}
+
+{% block body %}
+    <h1>KenCategories index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Image</th>
+                <th>Description</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for ken_category in ken_categories %}
+            <tr>
+                <td>{{ ken_category.id }}</td>
+                <td>{{ ken_category.nom }}</td>
+                <td>{{ ken_category.image }}</td>
+                <td>{{ ken_category.description }}</td>
+                <td>
+                    <a href="{{ path('ken_categories_show', {'id': ken_category.id}) }}">show</a>
+                    <a href="{{ path('ken_categories_edit', {'id': ken_category.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('ken_categories_new') }}">Create new</a>
+{% endblock %}
