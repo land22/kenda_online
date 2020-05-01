@@ -35,17 +35,17 @@
                             <i class="material-icons">view_carousel</i> Service en ligne
                         </a>
                         <div class="dropdown-menu dropdown-with-icons">
-                            <a href="./examples/error.html" class="dropdown-item">
+                            <a href="{{path('shop')}}" class="dropdown-item">
                                 <i class="material-icons">error</i> Error Page
                             </a>
                         </div>
                     </li>
                     <li class="dropdown nav-item">
-                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                        <a href="{{path('about_us')}}" class="dropdown-toggle nav-link" data-toggle="dropdown">
                             <i class="material-icons">apps</i> Qui sommes nous
                         </a>
                         <div class="dropdown-menu dropdown-with-icons">
-                            <a href="./presentation.html" class="dropdown-item">
+                            <a href="{{path('about_us')}}" class="dropdown-item">
                                 <i class="material-icons">layers</i> Presentation
                             </a>
                         </div>
@@ -56,16 +56,16 @@
                         </a>
                         <div class="dropdown-menu dropdown-with-icons">
                             <a href="{{path('app_login')}}" class="dropdown-item">
-                                <i class="material-icons">dns</i> Connexion
+                                <i class="material-icons"></i> Connexion
                             </a>
-                            <a href="{{path('app_login')}}" class="dropdown-item">
+                            <a href="{{path('app_register')}}" class="dropdown-item">
                                 <i class="material-icons"></i> Inscription
                             </a>
                         </div>
                     </li>
 
                     <li class="button-container nav-item iframe-extern">
-                        <a href="https://www.creative-tim.com/product/material-kit-pro?ref=presentation" target="_blank" class="btn  btn-info   btn-round btn-block">
+                        <a href="{{path('shop')}}" target="_blank" class="btn  btn-info   btn-round btn-block">
                             <i class="material-icons">shopping_cart</i> Boutique
                         </a>
                     </li>

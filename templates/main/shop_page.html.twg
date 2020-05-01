@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="page-header header-filter clear-filter" data-parallax="true" style="background-image: url('assets/img/kenda_online/bgKen.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto">
+                    <div class="brand">
+                        <h1>Nos produits
+                        </h1>
+                        <h3 class="title">Plateforme de vente de produit et d'offre de service au Cameroun.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main main-raised">
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto">
+                        <h4 class="description text-center">Coming soon !!!</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--     *********    END FEATURES 5      *********      -->
+        <!--     *********     FEATURES 5      *********      -->
+        <div class="section section-overview">
+            <div class="section-testimonials team-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 ml-auto mr-auto text-center">
+                            <h2 class="title">Nos partenaires</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
