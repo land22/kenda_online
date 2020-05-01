@@ -3,6 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="597fa2f0-0019-42bf-945a-136b92b0d726" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/baseAdmin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/baseAdmin.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ken_articles/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ken_articles/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ken_articles/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ken_articles/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ken_articles/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ken_articles/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ken_articles/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ken_articles/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ken_articles/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ken_articles/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ken_categories/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ken_categories/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ken_categories/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ken_categories/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ken_categories/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ken_categories/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ken_categories/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ken_categories/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +184,7 @@
       <updated>1588149027540</updated>
       <workItem from="1588149028966" duration="3455000" />
       <workItem from="1588194905532" duration="1115000" />
-      <workItem from="1588238824318" duration="20133000" />
+      <workItem from="1588238824318" duration="29953000" />
     </task>
     <servers />
   </component>

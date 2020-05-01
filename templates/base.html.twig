@@ -19,7 +19,7 @@
     <nav class="navbar navbar-color-on-scroll navbar-transparent    fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
         <div class="container">
             <div class="navbar-translate">
-                <a class="navbar-brand" href="https://demos.creative-tim.com/material-kit-pro/index.html">
+                <a class="navbar-brand" href="{{path('main')}}">
                     KENDA ONLINE </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="sr-only">Toggle navigation</span>
@@ -42,7 +42,7 @@
                     </li>
                     <li class="dropdown nav-item">
                         <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                            <i class="material-icons">apps</i> Components
+                            <i class="material-icons">apps</i> Qui sommes nous
                         </a>
                         <div class="dropdown-menu dropdown-with-icons">
                             <a href="./presentation.html" class="dropdown-item">
@@ -51,15 +51,15 @@
                         </div>
                     </li>
                     <li class="dropdown nav-item">
-                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                            <i class="material-icons">view_day</i> Sections
+                        <a href="{{path('app_login')}}" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                            <i class="material-icons">view_day</i> Clients
                         </a>
                         <div class="dropdown-menu dropdown-with-icons">
-                            <a href="./sections.html#headers" class="dropdown-item">
-                                <i class="material-icons">dns</i> Headers
+                            <a href="{{path('app_login')}}" class="dropdown-item">
+                                <i class="material-icons">dns</i> Connexion
                             </a>
-                            <a href="./sections.html#contactus" class="dropdown-item">
-                                <i class="material-icons">call</i> Contacts
+                            <a href="{{path('app_login')}}" class="dropdown-item">
+                                <i class="material-icons"></i> Inscription
                             </a>
                         </div>
                     </li>
@@ -97,6 +97,11 @@
                 <li>
                     <a href="https://www.creative-tim.com/license" target="_blank">
                         Licenses
+                    </a>
+                </li>
+                <li>
+                    <a href="{{path('app_login')}}" target="_blank">
+                        Clients
                     </a>
                 </li>
             </ul>

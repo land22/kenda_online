@@ -1,13 +1,13 @@
-{% extends 'base.html.twig' %}
+{% extends 'baseAdmin.html.twig' %}
 
-{% block title %}Edit KenArticles{% endblock %}
+{% block title %}Modifier un produits{% endblock %}
 
 {% block body %}
     <h1>Edit KenArticles</h1>
 
     {{ include('ken_articles/_form.html.twig', {'button_label': 'Update'}) }}
 
-    <a href="{{ path('ken_articles_index') }}">back to list</a>
+    <a href="{{ path('ken_articles_index') }}">Retour à la liste de produit</a>
 
     {{ include('ken_articles/_delete_form.html.twig') }}
 {% endblock %}

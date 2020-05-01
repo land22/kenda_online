@@ -1,16 +1,11 @@
-{% extends 'base.html.twig' %}
-
-{% block title %}KenArticles{% endblock %}
+{% extends 'baseAdmin.html.twig' %}
 
 {% block body %}
-    <h1>KenArticles</h1>
+    <h1>liste des produits</h1>
 
     <table class="table">
         <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ ken_article.id }}</td>
-            </tr>
+
             <tr>
                 <th>Nom</th>
                 <td>{{ ken_article.nom }}</td>
@@ -24,7 +19,7 @@
                 <td>{{ ken_article.prix }}</td>
             </tr>
             <tr>
-                <th>CreatedAt</th>
+                <th>Date de creation</th>
                 <td>{{ ken_article.createdAt ? ken_article.createdAt|date('Y-m-d H:i:s') : '' }}</td>
             </tr>
             <tr>
